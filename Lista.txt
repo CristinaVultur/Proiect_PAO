@@ -1,0 +1,23 @@
+ Rezervare loc în sala de spectacol (spectacol, loc, client) 
+ 
+ Clase:
+  -Client ce are un TreeMap<Eveniment,Loc> sortat dupa data
+  -Loc
+  -Locuri ce are un ArrayList<Loc>
+  -Eveniment -superclasa
+    -subclase: -Teatru
+               -Opera
+               -Concert
+               -Film
+ -ClientService ce are urmatoarele actiuni/iterogari:
+  -rezervarea unui loc
+  -cautarea de locuri dupa tipul sau
+  -anularea rezervarii
+  -afisarea locurilor rezervare de client
+  -cautarea de evenimente intr-o anumita data
+  -cautarea de evenimente dupa un anumit gen
+  -afisarea tuturor evenimentelor la care mai sunt locuri disponibile
+  -schimbarea locului la un animit eveniment
+  -afisarea locurilor disponibile la un anumit eveniment
+  -cautarea dupa nume
+  -cautarea dupa subclasa (teatru, opera,etc)
