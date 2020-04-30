@@ -15,11 +15,13 @@ public class Eveniment{
 
     public Eveniment(String nume, int pretBilet, String gen,
                      int durata, String data, Locuri locuri) throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
             this.nume = nume;
             this.pretBilet = pretBilet;
             this.gen= gen;
             this.durata = durata;
-            this.data= DateFormat.getDateInstance(DateFormat.DEFAULT).parse(data);
+            this.data= format.parse ( data ); ;
             this.locuri = new Locuri(locuri);
 
     }
